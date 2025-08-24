@@ -1,8 +1,8 @@
 #This program is about to count the digits of the numbers
 
 number = int(input("Enter the number: "))
-c = 0
+i = 0
 while number > 0:
-     c = c + 1
+     i = i + 1
      number = number // 10
-     print(c)
+     print('Print no of digits', i)
