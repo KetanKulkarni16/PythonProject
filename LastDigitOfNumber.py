@@ -3,10 +3,7 @@
 number = int(input("Enter the number"))
 
 while number > 0:
-
     r = number % 10
-
-    print(r)
-
     number = number // 10
 
+print(r)
