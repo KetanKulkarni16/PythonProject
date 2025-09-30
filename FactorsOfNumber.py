@@ -1,4 +1,4 @@
-# This program is about to find the factors fo the numbers
+# This program is about to find the factors for the numbers
 
 number = int(input("Enter the number to find factor: "))
 
