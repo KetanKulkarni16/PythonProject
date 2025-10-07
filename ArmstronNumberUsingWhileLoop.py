@@ -6,8 +6,8 @@ sum = 0
 digits = len(str(n))
 
 while temp > 0:
-    digit = temp % 10
-    sum = sum + digit ** digit
+    digits = temp % 10
+    sum += digits ** digits
     temp = temp // 10
 if n == sum:
     print("Armstrong Number")
