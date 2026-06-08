@@ -1,11 +1,5 @@
 #This project is about to create a to-do list in python
 
-# print("Enter
-# user_text=input()
-# print(user_text)
-
-
-
 todos = []
 
 while True :
