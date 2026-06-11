@@ -1,15 +1,21 @@
 #This project is about to create a to-do list in python
-
-todos = []
-
 while True :
     user_action = input("Type add,show,edit,complete or exit: ")
     user_action = user_action.strip()  #strip() function is used for stripping trailing spaces
 
     match user_action:
         case 'add':
-            todo = input("Enter a todo: ")
+            todo = input("Enter a todo: ") +"\n"
+
+            file = open('TODOLIST.txt', 'r')
+            todos = file.readlines()
+            file.close()
+
             todos.append(todo)
+
+            file = open('TODOLIST.txt', 'w')
+            file.writelines(todos)
+            file.close()
 
         case 'show':
             for index, item in enumerate(todos):
